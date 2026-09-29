@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thể thao</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* KHUNG CHÍNH */
+        .khung {
+            width: 750px;
+            margin: 30px auto;
+            border: 1px solid black;
+        }
+
+        /* DÒNG ĐĂNG KÝ THỂ THAO */
+        .dau-khung {
+            background-color: #eeeeee;
+            border-bottom: 1px solid black;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* PHẦN ĐĂNG KÝ */
+        .dang-ky {
+            padding: 10px;
+            border-bottom: 3px solid black;
+        }
+
+        /* =========================
+           PHẦN ĐẦU TRANG
+           ========================= */
+
+        .dau-trang {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            line-height: 20px;
+            font-size: 13px;
+        }
+
+        .truong {
+            width: 45%;
+            text-align: left;
+        }
+
+        .quoc-hieu {
+            width: 55%;
+        }
+
+        .dam {
+            font-weight: bold;
+        }
+
+        /* =========================
+           TIÊU ĐỀ
+           Verdana - 20 - đỏ - đậm
+           ========================= */
+
+        .tieu-de {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .tieu-de h2 {
+            margin: 5px;
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* =========================
+           NỘI DUNG ĐĂNG KÝ
+           ========================= */
+
+        .noi-dung {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* LOGO */
+        .logo {
+            width: 150px;
+            height: 90px;
+            border: 1px solid #777;
+            margin-right: 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .logo .b {
+            font-size: 45px;
+            color: #555;
+            margin-right: 5px;
+        }
+
+        /* FORM */
+        .form {
+            width: 300px;
+        }
+
+        .dong {
+            margin: 8px 0;
+        }
+
+        .dong label {
+            display: inline-block;
+            width: 80px;
+        }
+
+        .dong input[type="text"],
+        .dong input[type="password"] {
+            width: 120px;
+            height: 20px;
+        }
+
+        /* =========================
+           MÔN THỂ THAO
+           ========================= */
+
+        .mon-the-thao {
+            margin-top: 15px;
+        }
+
+        .mon-the-thao-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .mon-the-thao label {
+            display: block;
+            margin-left: 20px;
+        }
+
+        /* =========================
+           PHẦN CỨNG MÁY TÍNH
+           ========================= */
+
+        .phan-cung {
+            padding: 0 10px 20px 10px;
+        }
+
+        .tieu-de-phan-cung {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+
+            border-bottom: 1px solid black;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .phan-cung-noi-dung {
+            width: 350px;
+        }
+
+        .phan-cung label {
+            font-weight: bold;
+        }
+
+        /* HỘP THIẾT BỊ */
+        select {
+            width: 125px;
+            height: 75px;
+            margin-top: 5px;
+        }
+
+        /* THỜI GIAN BẢO HÀNH */
+        .bao-hanh {
+            margin-top: 15px;
+        }
+
+        .bao-hanh select {
+            width: 55px;
+            height: 25px;
+        }
+
+        /* =========================
+           NÚT SUBMIT / RESET
+           ========================= */
+
+        .nut {
+            margin-top: 10px;
+        }
+
+        .nut input {
+            padding: 4px 10px;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="khung">
+
+    <!-- =================================
+         DÒNG ĐĂNG KÝ THỂ THAO
+         ================================= -->
+
+    <div class="dau-khung">
+        Đăng ký thể thao
+    </div>
+
+
+    <!-- =================================
+         PHẦN 1: PHIẾU ĐĂNG KÝ
+         ================================= -->
+
+    <div class="dang-ky">
+
+        <!-- PHẦN ĐẦU -->
+        <div class="dau-trang">
+
+            <!-- TRƯỜNG -->
+            <div class="truong">
+
+                <div class="dam">
+                    TRƯỜNG ĐẠI HỌC BẠC LIÊU
+                </div>
+
+                <div>
+                    KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+                </div>
+
+            </div>
+
+
+            <!-- QUỐC HIỆU -->
+            <div class="quoc-hieu">
+
+                <div class="dam">
+                    CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+                </div>
+
+                <div>
+                    Độc lập - Tự do - Hạnh phúc
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TIÊU ĐỀ -->
+        <div class="tieu-de">
+
+            <h2>
+                PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO
+            </h2>
+
+        </div>
+
+
+        <!-- NỘI DUNG -->
+        <div class="noi-dung">
+
+            <!-- LOGO BẠC LIÊU -->
+            <div class="logo">
+
+                <span class="b">
+                    B
+                </span>
+
+                <span>
+                    <td>
+                            <img src="anh1.jpg"
+                            width="150"
+                                 height="80"
+                                 alt="Logo trường Đại học Bạc Liêu">
+                        </td>
+                </span>
+
+            </div>
+
+
+            <!-- FORM -->
+            <div class="form">
+
+                <!-- HỌ TÊN -->
+                <div class="dong">
+
+                    <label for="hoten">
+                        Họ tên:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="hoten"
+                    >
+
+                </div>
+
+
+                <!-- MẬT KHẨU -->
+                <div class="dong">
+
+                    <label for="matkhau">
+                        Mật khẩu:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="matkhau"
+                    >
+
+                </div>
+
+
+                <!-- MÔN THỂ THAO -->
+                <div class="mon-the-thao">
+
+                    <div class="mon-the-thao-title">
+                        Môn thể thao:
+                    </div>
+
+
+                    <!-- Bóng đá -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="thethao"
+                        >
+                        Bóng đá
+                    </label>
+
+
+                    <!-- Bóng chuyền -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="thethao"
+                        >
+                        Bóng chuyền
+                    </label>
+
+
+                    <!-- Điền kinh -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="thethao"
+                        >
+                        Điền kinh
+                    </label>
+
+
+                    <!-- Bơi lội -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="thethao"
+                        >
+                        Bơi lội
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         PHẦN 2: PHẦN CỨNG MÁY TÍNH
+         ================================= -->
+
+    <div class="phan-cung">
+
+        <!-- TIÊU ĐỀ -->
+        <div class="tieu-de-phan-cung">
+            PHẦN CỨNG MÁY TÍNH
+        </div>
+
+
+        <div class="phan-cung-noi-dung">
+
+            <!-- THIẾT BỊ -->
+            <div>
+
+                <label for="thietbi">
+                    Thiết bị
+                </label>
+
+                <br>
+
+                <select
+                    id="thietbi"
+                    multiple
+                >
+
+                    <option>CPU</option>
+
+                    <option>Mainboard</option>
+
+                    <option>ASUS DVD</option>
+
+                    <option>RAM KingMax</option>
+
+                </select>
+
+            </div>
+            <!-- THỜI GIAN BẢO HÀNH -->
+            <div class="bao-hanh">
+
+                <label for="thoigian">
+                    Thời gian bảo hành:
+                </label>
+
+                <br>
+
+                <select id="thoigian">
+
+                    <option>1</option>
+
+                    <option>2</option>
+
+                    <option>3</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- NÚT -->
+            <div class="nut">
+
+                <input
+                    type="submit"
+                    value="Submit"
+                >
+
+                <input
+                    type="reset"
+                    value="Reset"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
