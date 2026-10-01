@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3.8</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* MENU CHÍNH */
+        .menu {
+            width: 760px;
+            margin: 30px;
+            background-color: #333;
+        }
+
+        .menu > ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu > ul > li {
+            position: relative;
+        }
+
+        .menu > ul > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .menu > ul > li > a:hover {
+            background-color: #555;
+        }
+
+
+        /* MENU KHÓA HỌC */
+        .menu-con {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 235px;
+            background-color: #333;
+            list-style: none;
+            z-index: 10;
+        }
+
+        .menu-con > li {
+            position: relative;
+            border-bottom: 1px solid white;
+        }
+
+        .menu-con > li > a {
+            display: block;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-con > li > a:hover {
+            background-color: #555;
+        }
+
+        /* Hiện menu Khóa học */
+        .menu > ul > li:hover > .menu-con {
+            display: block;
+        }
+
+
+        /* MENU BÊN PHẢI */
+        .menu-cap2 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 235px;
+            width: 285px;
+            background-color: #333;
+            list-style: none;
+        }
+
+        .menu-cap2 li {
+            border-bottom: 1px solid white;
+        }
+
+        .menu-cap2 a {
+            display: block;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-cap2 a:hover {
+            background-color: #555;
+        }
+
+        /* Hiện menu Word, Excel, Powerpoint */
+        .menu-con > li:hover > .menu-cap2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <ul>
+
+            <!-- TRANG CHỦ -->
+            <li>
+                <a href="trangchu.htm">Trang chủ</a>
+            </li>
+
+
+            <!-- GIỚI THIỆU -->
+            <li>
+                <a href="gioithieu.htm">Giới thiệu</a>
+            </li>
+
+
+            <!-- KHÓA HỌC -->
+            <li>
+                <a href="#">Khóa học ↓</a>
+
+                <ul class="menu-con">
+
+                    <!-- TIN HỌC CĂN BẢN -->
+                    <li>
+                        <a href="#">Tin học căn bản →</a>
+
+                        <ul class="menu-cap2">
+
+                            <li>
+                                <a href="word2010.htm">
+                                    Microsoft Word 2010
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="excel2010.htm">
+                                    Microsoft Excel 2010
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="powerpoint2010.htm">
+                                    Microsoft Powerpoint 2010
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <!-- CÁC KHÓA HỌC KHÁC -->
+                    <li>
+                        <a href="#">Tin học phổ thông</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lập trình Pascal</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lập trình C</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Thiết kế website</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Vẽ kỹ thuật AutoCAD</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+            <!-- BÀI VIẾT -->
+            <li>
+                <a href="#">Bài viết</a>
+            </li>
+
+
+            <!-- THỦ THUẬT -->
+            <li>
+                <a href="#">Thủ thuật</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</body>
+</html>
