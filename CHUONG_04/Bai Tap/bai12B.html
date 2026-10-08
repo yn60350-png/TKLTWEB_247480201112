@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Đọc giá trị trong hộp text</title>
+</head>
+<body>
+
+    <h2>Nhập họ tên và năm sinh</h2>
+
+    <input type="text"
+    id="HoTen"
+    placeholder="Họ tên">
+<br><br>
+
+    <input type="text"
+    id="Namsinh"
+    placeholder="Năm sinh">
+<br><br>
+
+    <input type="button"
+    name="HienThi"
+    value="Hiển thị"
+    onclick="document.write('Họ tên: ' + document.getElementById('HoTen').value);
+                document.write('<BR>');
+                document.write('Năm sinh: ' + document.getElementById('Namsinh').value); ">
+
+</body>
+</html>

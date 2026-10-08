@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>May tinh ca nhan</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <input type="text"
+       id="Ketqua"
+       style="width:250px; height:30px;">
+
+    <br><br>
+
+    <input type="button" value="0" onclick="Them('0')">
+    <input type="button" value="1" onclick="Them('1')">
+    <input type="button" value="2" onclick="Them('2')">
+    <input type="button" value="3" onclick="Them('3')">
+    <input type="button" value="4" onclick="Them('4')">
+
+    <br>
+
+    <input type="button" value="5" onclick="Them('5')">
+    <input type="button" value="6" onclick="Them('6')">
+    <input type="button" value="7" onclick="Them('7')">
+    <input type="button" value="8" onclick="Them('8')">
+    <input type="button" value="9" onclick="Them('9')">
+
+    <br>
+
+    <input type="button" value="+" onclick="Them('+')">
+    <input type="button" value="-" onclick="Them('-')">
+    <input type="button" value="*" onclick="Them('*')">
+    <input type="button" value="/" onclick="Them('/')">
+
+    <input type="button" value="=" onclick="Tinh()">
+
+    <br>
+
+    <input type="button" value="C" onclick="Xoa()">
+
+    <script>
+
+        function Them(kyTu)
+        {
+            document.getElementById("Ketqua").value += kyTu;
+        }
+
+        function Tinh()
+        {
+            var bieuThuc =
+                document.getElementById("Ketqua").value;
+
+            if (bieuThuc == "")
+            {
+                return;
+            }
+
+            try
+            {
+                document.getElementById("Ketqua").value =
+                    eval(bieuThuc);
+            }
+            catch
+            {
+                alert("Biểu thức không hợp lệ!");
+            }
+        }
+
+        function Xoa()
+        {
+            document.getElementById("Ketqua").value = "";
+        }
+
+    </script>
+</body>
+</html>

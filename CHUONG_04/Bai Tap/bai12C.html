@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Đọc giá trị trong Textbox</title>
+</head>
+<body>
+
+    <h2>Nhập họ và tên</h2>
+
+    Họ:
+    <input type="text"
+       id="Ho"
+       value="">
+       
+    Tên:
+    <input type="text"
+       id="Ten"
+       value="">
+
+    <input type="button"
+       name="HienThi"
+       value="Hiển thị"
+       onclick="
+       document.getElementById('Hoten').value =
+       document.getElementById('Ho').value + ' ' +
+       document.getElementById('Ten').value">
+
+    <br><br>
+
+    <input type="text"
+       id="Hoten"
+       value=""
+       size="30">
+
+</body>
+</html>

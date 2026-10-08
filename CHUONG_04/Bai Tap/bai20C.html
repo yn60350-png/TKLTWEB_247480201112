@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Tính lương nhân viên</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <h2>Thông tin nhân viên</h2>
+
+    Họ tên:
+    <input type="text" name="HoTen">
+    <br><br>
+
+    Năm vào làm:
+    <input type="text" id="NamVaoLam">
+    <br><br>
+
+    Hệ số:
+    <input type="text" id="HeSo">
+    <br><br>
+
+    Lương cơ sở:
+    <input type="text" id="LuongCoSo">
+    <br><br>
+
+    Lương cơ bản:
+    <input type="text" id="LuongCoBan">
+    <br><br>
+
+    Phụ cấp:
+    <input type="text" id="PhuCap">
+    <br><br>
+
+    Thâm niên:
+    <input type="text" id="ThamNien">
+    <br><br>
+
+    Thành tiền:
+    <input type="text" id="ThanhTien">
+    <br><br>
+
+    <input type="button"
+       value="Tính Lương"
+       onclick="TinhLuong();">
+
+    <script language="javascript">
+        function TinhLuong()
+        {
+            var namHienTai = new Date().getFullYear();
+            var luongCoBan = parseFloat(HeSo.value) * parseFloat(LuongCoSo.value);
+            var phuCap = luongCoBan * 0.25;
+            var thamNien = namHienTai - parseInt(NamVaoLam.value);
+            var thanhTien = luongCoBan + phuCap;
+
+            LuongCoBan.value = luongCoBan;
+            PhuCap.value = phuCap;
+            ThamNien.value = thamNien;
+            ThanhTien.value = thanhTien;
+        }
+    </script>
+
+</body>
+</html>

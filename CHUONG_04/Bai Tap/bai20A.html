@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Tính tích</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <h1>Bạn hãy nhập vào số lượng và giá:</h1>
+
+    Số lượng:
+    <input type="text" id="SoLuong" onkeyup="TinhTien();">
+
+    <br><br>
+
+    Đơn giá:
+    <input type="text" id="DonGia" onkeyup="TinhTien();">
+
+    <hr>
+
+    Thành tiền:
+    <input type="text" id="ThanhTien">
+
+<script>
+    function TinhTien()
+    {
+        var soLuong = parseFloat(document.getElementById("SoLuong").value);
+        var donGia = parseFloat(document.getElementById("DonGia").value);
+
+        if (!isNaN(soLuong) && !isNaN(donGia))
+        {
+            document.getElementById("ThanhTien").value =
+            soLuong * donGia;
+        }
+    }
+</script>
+
+</body>
+</html>

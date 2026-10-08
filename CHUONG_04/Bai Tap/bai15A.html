@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Thay đổi thuộc tính của trang Web</title>
+
+    <script language="JavaScript">
+
+    function CapNhat()
+    {
+        document.title = TieuDe.value;
+        document.bgColor = MauNen.value;
+        document.fgColor = MauChu.value;
+        window.defaultStatus = TrangThai.value;
+    }
+
+    </script>
+</head>
+<body>  
+
+    <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+
+    <input type="text"
+       id="TieuDe"
+       value="Tiêu đề mới">
+    <br>
+
+    <input type="text"
+       id="MauNen"
+       value="yellow">
+    <br>
+
+    <input type="text"
+       id="MauChu"
+       value="blue">
+    <br>
+
+    <input type="text"
+       id="TrangThai"
+       value="Trạng thái mới">
+    <br><br>
+
+    <input type="button"
+       id="ThayDoi"
+       value="Thay đổi"
+       onclick="CapNhat();">
+
+</body>
+</html>

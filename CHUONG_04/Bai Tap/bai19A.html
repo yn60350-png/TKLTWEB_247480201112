@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Xu ly su kien</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <input type="button"
+       value="Gửi"
+       onmousemove="HienThi('Chuột trong nút');">
+
+    <br><br>
+
+    <input type="text"
+       value=""
+       onmousemove="HienThi('Chuột trong textbox');">
+
+    <br><br>
+
+    <input type="radio"
+       name="GioiTinh"
+       onmousemove="HienThi('Trong nam');">
+    Nam
+
+    <input type="radio"
+       name="GioiTinh"
+       onmousemove="HienThi('Trong nữ');">
+    Nữ
+
+    <br><br>
+
+    <div id="ThongBao"></div>
+
+    <script>
+        function HienThi(noiDung)
+        {
+            document.getElementById("ThongBao").innerHTML = noiDung;
+        }
+    </script>
+
+</body>
+</html>

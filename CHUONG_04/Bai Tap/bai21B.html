@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Tính toán</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    Số 01:
+    <input type="text" id="So01">
+    <br><br>
+
+    Số 02:
+    <input type="text" id="So02">
+    <br><br>
+
+    Kết quả:
+    <input type="text" id="Ketqua">
+    <br><br>
+
+    <input type="radio" name="PhepTinh" value="cong">
+    Cộng
+
+    <input type="radio" name="PhepTinh" value="tru">
+    Trừ
+
+    <input type="radio" name="PhepTinh" value="nhan">
+    Nhân
+
+    <input type="radio" name="PhepTinh" value="chia">
+    Chia
+
+    <br><br>
+
+    <input type="button"
+       value="Tính"
+       onclick="Tinh();">
+
+    <script language="javascript">
+        function Tinh() 
+        {
+            var a = parseFloat(So01.value);
+            var b = parseFloat(So02.value);
+            var kq;
+
+            if (document.getElementsByName("PhepTinh")[0].checked)
+            kq = a + b;
+
+            if (document.getElementsByName("PhepTinh")[1].checked)
+            kq = a - b;
+
+            if (document.getElementsByName("PhepTinh")[2].checked)
+            kq = a * b;
+
+            if (document.getElementsByName("PhepTinh")[3].checked)
+            kq = a / b;
+
+            Ketqua.value = kq;
+        }
+    </script>
+
+</body>
+</html>

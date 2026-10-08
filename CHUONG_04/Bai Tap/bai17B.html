@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Đổi màu nền</title>
+</head>
+<body>
+
+    <h2>Chọn màu nền</h2>
+
+
+    <input type="radio" name="Mau" value="yellow"
+    onclick="doiMau(this.value);"> Màu vàng
+
+    <input type="radio" name="Mau" value="green"
+    onclick="doiMau(this.value);"> Màu xanh lá
+
+    <input type="radio" name="Mau" value="brown"
+    onclick="doiMau(this.value);"> Màu nâu
+
+    <input type="radio" name="Mau" value="magenta"
+    onclick="doiMau(this.value);"> Màu hồng
+
+    <script language="javascript">
+        function doiMau(mau)
+        {
+            document.body.style.backgroundColor = mau
+        }
+        </script>
+
+</body>
+</html>

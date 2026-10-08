@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Tính toán</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+    Số 01:
+    <input type="text" id="So01">
+    <br><br>
+
+    Số 02:
+    <input type="text" id="So02">
+    <br><br>
+
+    Kết quả:
+    <input type="text" id="Ketqua">
+    <br><br>
+
+    <input type="button" value="Cộng"
+       onclick="Ketqua.value=parseFloat(So01.value)+parseFloat(So02.value)">
+
+    <input type="button" value="Trừ"
+       onclick="Ketqua.value=parseFloat(So01.value)-parseFloat(So02.value)">
+
+    <input type="button" value="Nhân"
+       onclick="Ketqua.value=parseFloat(So01.value)*parseFloat(So02.value)">
+
+    <input type="button" value="Chia"
+       onclick="Ketqua.value=parseFloat(So01.value)/parseFloat(So02.value)">
+
+</body>
+</html>

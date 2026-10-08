@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Tính toán</title>
+</head>
+<body>
+
+    <h2>CHƯƠNG TRÌNH TÍNH TOÁN</h2>
+
+    Số hạng 1:
+    <input type="text" id="SoHang1">
+    <br><br>
+
+    Số hạng 2:
+    <input type="text" id="SoHang2">
+    <br><br>
+
+    <input type="radio" id="PhepTinh" value="cong" checked>
+    Cộng
+
+    <input type="radio" id="PhepTinh" value="tru">
+    Trừ
+
+    <input type="radio" id="PhepTinh" value="nhan">
+    Nhân
+
+    <input type="radio" id="PhepTinh" value="chia">
+    Chia
+
+    <br><br>
+
+    Kết quả:
+    <input type="text" id="KetQua">
+
+    <br><br>
+
+    <input type="button" value="Tính"
+    onclick="
+    if (PhepTinh[0].checked)
+        KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value);
+    else if (PhepTinh[1].checked)
+        KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value);
+    else if (PhepTinh[2].checked)
+        KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value);
+    else
+        KetQua.value = parseFloat(SoHang1.value) / parseFloat(SoHang2.value); ">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Đổi màu nền</title>
+</head>
+<body>
+    <h2>Chọn màu nền</h2>
+    
+    <select name=Mau onchange= "DoiMau(this.value);">
+
+        <OPTION value="red">Màu đỏ</OPTION>
+
+        <OPTION value="blue">Màu xanh</OPTION>
+
+        <OPTION value="brown">Màu nâu</OPTION>
+
+        <OPTION value="lavender">Màu xanh nhạt</OPTION>
+
+    </select>
+    <script language="JavaScript">
+        function DoiMau(mau)
+        {
+            document.body.style.backgroundColor = mau;
+        }
+    
+        </script>
+</body>
+</html>

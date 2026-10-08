@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Tính toán</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+    <h2>CHƯƠNG TRÌNH TÍNH TOÁN</h2>
+
+    Số hạng 1:
+    <input type="text" id="SoHang1">
+
+    <br><br>
+
+    Số hạng 2:
+    <input type="text" id="SoHang2">
+
+    <br><br>
+
+    Kết quả:
+    <input type="text" id="KetQua">
+
+    <br><br>
+
+    <input type="button" value="Cộng"
+    onclick="KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value)">
+    <input type="button" value="Trừ"
+    onclick="KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value)">
+    <input type="button" value="Nhân"
+    onclick="KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value)">
+    <input type="button" value="Chia"
+    onclick="KetQua.value = parseFloat(SoHang1.value) / parseFloat(SoHang2.value)">
+
+</body>
+</html>
